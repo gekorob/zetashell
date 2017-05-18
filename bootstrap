@@ -1,0 +1,20 @@
+#!/bin/sh
+
+set -e
+
+brew install zsh
+
+BASEPATH="$HOME/.zeta_shell"
+
+if [ -e $BASEPATH/.git ]; then
+    cd $BASEPATH && git pull
+else
+    git clone https://github.com/gekorob/zetashell.git $BASEPATH
+fi
+
+curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+
+ln -sf $BASEPATH/zshrc ~/.zshrc
+ln -sf $BASEPATH/aliases ~/.zsh_aliases
+
+chsh -s $(which zsh)

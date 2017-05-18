@@ -1,0 +1,39 @@
+# modified commands
+alias mkdir='mkdir -p -v'
+alias vi='vim'
+alias ping='ping -c 5'
+alias ..='cd ..'
+alias grep='grep --color=always'
+alias top='sudo htop'
+alias diff='colordiff'
+alias wget='wget -c'
+
+# new commands
+alias da='date "+%A, %B %d, %Y [%T]"'
+alias du1='du --max-depth=1'
+alias hist='history | grep $1'
+alias openports='netstat --all --numeric --programs --inet --inet6'
+alias pg='ps -Af | grep $1'
+alias lsop='sudo lsof -i :$1'
+alias ip='dig +short myip.opendns.com @resolver1.opendns.com'
+
+#osx
+alias osx-upgrade="sudo softwareupdate -ia"
+
+#brew
+alias brew-upgrade="brew update && brew bundle --global && brew upgrade && brew cu -y && brew prune && brew cleanup && brew cask cleanup"
+
+#gem
+alias gem-upgrade="gem update --system; gem update"
+
+#npm
+alias npm-upgrade="npm update -g"
+
+#vagrant
+alias vagrant-upgrade="vagrant plugin update"
+
+#vundle
+alias vundle-upgrade="vim +PluginInstall +qall"
+
+#all
+alias upgrade="osx-upgrade; brew-upgrade; pip-upgrade; gem-upgrade; npm-upgrade; vagrant-upgrade; vundle-upgrade"
