@@ -1,12 +1,13 @@
-OH_MY_ZSH=$HOME/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 ZETA_SHELL=$HOME/.zeta_shell
 ZSH_CUSTOM=$ZETA_SHELL
 ZSH_THEME="cobalt2"
 DEFAULT_USER=$(id -un)
 
+
 bindkey -v
 
-source $OH_MY_ZSH/oh-my-zsh.sh
+source $ZSH/oh-my-zsh.sh
 
 unset GREP_OPTIONS
 unsetopt correct_all
