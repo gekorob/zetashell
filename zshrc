@@ -6,7 +6,7 @@ DEFAULT_USER=$(id -un)
 
 bindkey -v
 
-source $OH_MY_ZSH'/oh-my-zsh.sh
+source $OH_MY_ZSH/oh-my-zsh.sh
 
 unset GREP_OPTIONS
 unsetopt correct_all
