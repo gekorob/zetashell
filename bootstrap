@@ -12,7 +12,7 @@ else
     git clone https://github.com/gekorob/zetashell.git $BASEPATH
 fi
 
-curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh
+curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
 ln -sf $BASEPATH/zshrc ~/.zshrc
 ln -sf $BASEPATH/aliases ~/.zsh_aliases
