@@ -26,6 +26,6 @@ source $ZETA_SHELL/functions
 source $ZETA_SHELL/aliases
 
 export NVM_DIR="$HOME/.nvm"
-source $(brew --prefix nvm)/nvm.sh
+source /usr/local/opt/nvm/nvm.sh
 
 stty -ixon
