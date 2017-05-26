@@ -36,4 +36,4 @@ alias vagrant-upgrade="vagrant plugin update"
 alias vundle-upgrade="vim +PluginInstall +qall"
 
 #all
-alias upgrade="osx-upgrade; brew-upgrade; pip-upgrade; gem-upgrade; npm-upgrade; vagrant-upgrade; vundle-upgrade"
+alias upgrade="osx-upgrade; brew-upgrade; gem-upgrade; npm-upgrade; vagrant-upgrade; vundle-upgrade"
