@@ -28,6 +28,8 @@ source $ZETA_SHELL/aliases
 export NVM_DIR="$HOME/.nvm"
 source /usr/local/opt/nvm/nvm.sh
 
+eval "$(rbenv init -)"
+
 stty -ixon
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
