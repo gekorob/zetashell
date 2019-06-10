@@ -2,8 +2,6 @@
 
 set -e
 
-brew install zsh
-
 BASEPATH="$HOME/.zeta_shell"
 
 if [ -e $BASEPATH/.git ]; then
