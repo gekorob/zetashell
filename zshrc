@@ -4,10 +4,6 @@ ZSH_CUSTOM=$ZETA_SHELL
 ZSH_THEME="agnoster"
 DEFAULT_USER=$(id -un)
 
-zstyle :omz:plugins:ssh-agent agent-forwarding on
-plugins=(
-  ssh-agent
-)
 
 
 bindkey -v
