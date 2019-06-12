@@ -4,8 +4,6 @@ ZSH_CUSTOM=$ZETA_SHELL
 ZSH_THEME="agnoster"
 DEFAULT_USER=$(id -un)
 
-
-
 bindkey -v
 
 source $ZSH/oh-my-zsh.sh
