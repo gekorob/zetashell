@@ -18,7 +18,6 @@ export PYTHONPATH
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US.UTF-8"
 export EDITOR="vim"
-export HOMEBREW_NO_ANALYTICS=1
 export TERM="screen-256color"
 
 source $ZETA_SHELL/functions
@@ -27,7 +26,8 @@ source $ZETA_SHELL/aliases
 # export NVM_DIR="$HOME/.nvm"
 # source /usr/local/opt/nvm/nvm.sh
 
-# eval "$(rbenv init -)"
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
 
 stty -ixon
 
@@ -41,3 +41,4 @@ stty -ixon
 # export PATH="$PATH:$HOME/.rvm/bin"
 
 DISABLE_AUTO_TITLE="true"
+
