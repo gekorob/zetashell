@@ -1,11 +1,10 @@
-zstyle :omz:plugins:ssh-agent agent-forwarding on
-
 export ZSH=$HOME/.oh-my-zsh
 ZETA_SHELL=$HOME/.zeta_shell
 ZSH_CUSTOM=$ZETA_SHELL
 ZSH_THEME="agnoster"
 DEFAULT_USER=$(id -un)
 
+zstyle :omz:plugins:ssh-agent agent-forwarding on
 plugins=(
   ssh-agent
 )
