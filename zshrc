@@ -1,8 +1,14 @@
+zstyle :omz:plugins:ssh-agent agent-forwarding on
+
 export ZSH=$HOME/.oh-my-zsh
 ZETA_SHELL=$HOME/.zeta_shell
 ZSH_CUSTOM=$ZETA_SHELL
 ZSH_THEME="agnoster"
 DEFAULT_USER=$(id -un)
+
+plugins=(
+  ssh-agent
+)
 
 
 bindkey -v
@@ -25,20 +31,20 @@ export TERM="screen-256color"
 source $ZETA_SHELL/functions
 source $ZETA_SHELL/aliases
 
-export NVM_DIR="$HOME/.nvm"
-source /usr/local/opt/nvm/nvm.sh
+# export NVM_DIR="$HOME/.nvm"
+# source /usr/local/opt/nvm/nvm.sh
 
-eval "$(rbenv init -)"
+# eval "$(rbenv init -)"
 
 stty -ixon
 
 # GO path settings
-export GOPATH=$HOME/go
-export GOROOT=/usr/local/opt/go/libexec
-export PATH=$PATH:$GOPATH/bin
-export PATH=$PATH:$GOROOT/bin
+# export GOPATH=$HOME/go
+# export GOROOT=/usr/local/opt/go/libexec
+# export PATH=$PATH:$GOPATH/bin
+# export PATH=$PATH:$GOROOT/bin
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
+# export PATH="$PATH:$HOME/.rvm/bin"
 
 DISABLE_AUTO_TITLE="true"
