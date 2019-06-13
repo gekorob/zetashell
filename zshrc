@@ -12,7 +12,7 @@ unset GREP_OPTIONS
 unsetopt correct_all
 unsetopt correct
 
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin
+export PATH=$PATH:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin
 PYTHONPATH+=(/usr/local/lib/python2.7/site-packages(N-/))
 export PYTHONPATH
 export LC_ALL="en_US.UTF-8"
