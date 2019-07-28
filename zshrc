@@ -23,14 +23,12 @@ export TERM="screen-256color"
 source $ZETA_SHELL/functions
 source $ZETA_SHELL/aliases
 
-# export NVM_DIR="$HOME/.nvm"
-# source /usr/local/opt/nvm/nvm.sh
-
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 stty -ixon
 
+autoload -U compinit && compinit
 # GO path settings
 # export GOPATH=$HOME/go
 # export GOROOT=/usr/local/opt/go/libexec
@@ -42,3 +40,9 @@ stty -ixon
 
 DISABLE_AUTO_TITLE="true"
 
+setopt +o nomatch
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
