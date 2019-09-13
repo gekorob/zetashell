@@ -1,6 +1,6 @@
 # modified commands
 alias mkdir='mkdir -p -v'
-alias vi='vim'
+alias vi='vimx'
 alias ping='ping -c 5'
 alias ..='cd ..'
 alias grep='grep --color=always'
