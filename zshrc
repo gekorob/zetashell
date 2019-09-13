@@ -23,8 +23,14 @@ export TERM="screen-256color"
 source $ZETA_SHELL/functions
 source $ZETA_SHELL/aliases
 
+# rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+# pyenv
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
 stty -ixon
 
