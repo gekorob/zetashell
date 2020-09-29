@@ -35,14 +35,9 @@ eval "$(pyenv virtualenv-init -)"
 stty -ixon
 
 autoload -U compinit && compinit
-# GO path settings
-# export GOPATH=$HOME/go
-# export GOROOT=/usr/local/opt/go/libexec
-# export PATH=$PATH:$GOPATH/bin
-# export PATH=$PATH:$GOROOT/bin
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-# export PATH="$PATH:$HOME/.rvm/bin"
+# GO path settings
+export PATH=$PATH:/usr/local/go/bin
 
 DISABLE_AUTO_TITLE="true"
 
